@@ -52,7 +52,7 @@ export default function HomePage() {
 
             <div className="space-y-20 py-24">
               <div className="space-y-12">
-                <h2 className="text-2xl font-extralight tracking-[0.2em] text-foreground/70">Why AONA Exists</h2>
+                <h2 className="text-2xl font-extralight tracking-[0.2em] text-foreground/70">Why UONA Exists</h2>
 
                 <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
                   <div className="space-y-4">
