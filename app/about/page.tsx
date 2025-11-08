@@ -27,7 +27,7 @@ export default function AboutPage() {
 
       <div className="container mx-auto max-w-4xl">
         <div className="mb-12 text-center">
-          <h1 className="mb-2">About AONA</h1>
+          <h1 className="mb-2">About UONA</h1>
           <p className="text-muted-foreground font-light text-sm tracking-wide">
             Autonomous Oracles for Networked Aquatic Systems
           </p>
@@ -51,7 +51,7 @@ export default function AboutPage() {
           <h2 className="text-3xl mb-8 text-center">Mission</h2>
           <div className="max-w-2xl mx-auto space-y-6 text-center">
             <p className="text-lg font-light leading-relaxed text-muted-foreground text-pretty">
-              AONA transforms hydrological data into liquid onchain assets through autonomous oracles and continuous
+              UONA transforms hydrological data into liquid onchain assets through autonomous oracles and continuous
               micropayment streams.
             </p>
             <p className="text-lg font-light leading-relaxed text-muted-foreground text-pretty">
@@ -153,7 +153,7 @@ export default function AboutPage() {
           <div className="p-8 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm">
             <h3 className="text-xl font-light mb-4 tracking-wide">Open Source</h3>
             <p className="text-sm font-light text-muted-foreground mb-6">
-              AONA is being built in the open. View the repository and contribute to the project.
+              UONA is being built in the open. View the repository and contribute to the project.
             </p>
             <a
               href="#"

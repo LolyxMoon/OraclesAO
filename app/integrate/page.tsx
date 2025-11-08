@@ -7,7 +7,7 @@ export default function IntegratePage() {
       <div className="container mx-auto max-w-4xl mb-20">
         <h1 className="text-4xl font-extralight tracking-[0.2em] text-foreground/80 mb-6 text-center">Integrate</h1>
         <p className="text-sm font-extralight text-muted-foreground/60 tracking-[0.15em] text-center max-w-xl mx-auto leading-loose">
-          You bring the sensor. AONA listens.
+          You bring the sensor. UONA listens.
         </p>
       </div>
 

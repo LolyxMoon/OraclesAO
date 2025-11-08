@@ -58,7 +58,7 @@ export function AnomalyCard({ anomaly }: AnomalyCardProps) {
       {showExplain && (
         <ExplainOverlay
           title="Anomaly Detection"
-          content="AONA uses z-score analysis to detect anomalies in sensor data. A z-score measures how many standard deviations a reading is from the historical mean. Values beyond ±3 indicate significant deviations from normal patterns, accounting for seasonal variation and measurement drift."
+          content="UONA uses z-score analysis to detect anomalies in sensor data. A z-score measures how many standard deviations a reading is from the historical mean. Values beyond ±3 indicate significant deviations from normal patterns, accounting for seasonal variation and measurement drift."
           onClose={() => setShowExplain(false)}
         />
       )}

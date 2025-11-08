@@ -17,7 +17,7 @@ export default function BenchmarksPage() {
           <h1 className="text-5xl font-light tracking-widest text-foreground mb-6">Data Integrity & Sensor QA</h1>
           <p className="text-lg font-light text-muted-foreground leading-relaxed tracking-wide">
             Build trust through transparency. Monitor data quality scores, agent signatures, and sensor reliability
-            metrics across the AONA network.
+            metrics across the UONA network.
           </p>
         </div>
       </div>

@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AONA - Autonomous Oracles for Networked Aquatic Systems",
+  title: "UONA - Autonomous Oracles for Networked Aquatic Systems",
   description: "Water knows. The network translates.",
   icons: {
     icon: [

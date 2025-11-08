@@ -18,7 +18,7 @@ export default function PitchPage() {
       <div className="container mx-auto max-w-4xl px-6 py-32 space-y-32">
         {/* Mission One-liner */}
         <section className="text-center space-y-8 min-h-[60vh] flex flex-col justify-center">
-          <h1 className="font-extralight tracking-[0.2em] text-balance">AONA</h1>
+          <h1 className="font-extralight tracking-[0.2em] text-balance">UONA</h1>
           <InkBrushDivider />
           <p className="text-2xl md:text-3xl font-extralight tracking-[0.12em] text-foreground/70 leading-relaxed max-w-3xl mx-auto text-balance">
             Autonomous intelligence for Earth's water systems
@@ -51,7 +51,7 @@ export default function PitchPage() {
           <h2 className="text-center font-extralight tracking-[0.1em]">The Network Translates</h2>
           <div className="space-y-8 max-w-2xl mx-auto">
             <p className="text-base md:text-lg font-extralight leading-relaxed text-foreground/70 tracking-wide text-pretty">
-              AONA creates an autonomous oracle network for hydrological data. Sensors deployed across watersheds stream
+              UONA creates an autonomous oracle network for hydrological data. Sensors deployed across watersheds stream
               real-time information.
             </p>
             <p className="text-base md:text-lg font-extralight leading-relaxed text-foreground/70 tracking-wide text-pretty">
@@ -134,7 +134,7 @@ export default function PitchPage() {
           <h2 className="text-center font-extralight tracking-[0.1em]">Global Intelligence Layer</h2>
           <div className="space-y-8 max-w-2xl mx-auto">
             <p className="text-base md:text-lg font-extralight leading-relaxed text-foreground/70 tracking-wide text-pretty">
-              AONA provides a comprehensive intelligence platform that transforms raw sensor data into actionable water
+              UONA provides a comprehensive intelligence platform that transforms raw sensor data into actionable water
               stewardship.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

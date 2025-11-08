@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-3xl mx-auto">
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-extralight tracking-[0.25em] mb-6">AONA</h3>
+            <h3 className="text-lg font-extralight tracking-[0.25em] mb-6">UONA</h3>
             <p className="text-sm text-muted-foreground/60 font-extralight leading-loose tracking-wide">
               Rivers remember.
             </p>

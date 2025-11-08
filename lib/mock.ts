@@ -1,4 +1,4 @@
-// Mock data generator for AONA front-end
+// Mock data generator for UONA front-end
 
 export interface Sensor {
   id: string
@@ -131,7 +131,7 @@ export interface NodeStats {
     calibrationDays: number
   }
   integrity: {
-    agent: "AONA"
+    agent: "UONA"
     signatureHash: string
   }
   reliabilityRank: string
@@ -601,7 +601,7 @@ export function getNodeStats(id: string): NodeStats | undefined {
       calibrationDays: Math.floor(Math.random() * 45),
     },
     integrity: {
-      agent: "AONA",
+      agent: "UONA",
       signatureHash: `0x${Math.random().toString(16).substring(2, 18)}...`,
     },
     reliabilityRank: "Top 15%",

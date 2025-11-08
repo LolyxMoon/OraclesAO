@@ -25,7 +25,7 @@ export function Header() {
           
           <Link href="/" className="flex items-center gap-3 group">
             <span className="text-xl font-extralight tracking-[0.25em] group-hover:text-primary transition-colors duration-500">
-              AONA
+              UONA
             </span>
           </Link>
 

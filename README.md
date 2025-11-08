@@ -1,10 +1,10 @@
-# AONA - Autonomous Oracles for Networked Aquatic Systems
+# UONA - Autonomous Oracles for Networked Aquatic Systems
 
-**Water knows. The network translates. AONA.**
+**Water knows. The network translates. UONA.**
 
 ## Overview
 
-AONA is a front-end scaffold for a DePIN hydrology protocol that transforms aquatic sensor data into liquid onchain assets through autonomous oracles and x402 micropayment streams.
+UONA is a front-end scaffold for a DePIN hydrology protocol that transforms aquatic sensor data into liquid onchain assets through autonomous oracles and x402 micropayment streams.
 
 ## Design Philosophy
 

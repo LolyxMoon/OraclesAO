@@ -22,7 +22,7 @@ export default function HomePage() {
 
             <div className="space-y-20">
               <h1 className="font-extralight tracking-[0.2em] text-balance">
-                <span className="inline-block">AONA</span>
+                <span className="inline-block">UONA</span>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground/60 font-extralight tracking-[0.15em] max-w-2xl mx-auto leading-loose">
@@ -44,7 +44,7 @@ export default function HomePage() {
                   The network translates.
                 </p>
                 <p className="text-base md:text-lg font-extralight tracking-[0.18em] text-foreground/60">
-                  AONA.
+                  UONA.
                 </p>
               </div>
               <InkBrushDivider />
@@ -76,7 +76,7 @@ export default function HomePage() {
 
                 <div className="pt-12">
                   <p className="text-base md:text-lg font-extralight tracking-[0.15em] text-primary/80 leading-loose max-w-3xl mx-auto">
-                    AONA turns distributed water sensing into insight, integrity, and action.
+                    UONA turns distributed water sensing into insight, integrity, and action.
                   </p>
                 </div>
               </div>
