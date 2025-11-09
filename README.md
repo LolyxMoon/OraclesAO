@@ -5,7 +5,7 @@
 ## Overview
 
 UONA is a front-end scaffold for a DePIN hydrology protocol that transforms aquatic sensor data into liquid onchain assets through autonomous oracles and x402 micropayment streams.
-
+a
 ## Design Philosophy
 
 **Aqua-Shodō Minimalism** - Where zen ink calligraphy meets hydrology-tech:
