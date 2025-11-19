@@ -26,7 +26,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground/60 font-extralight tracking-[0.15em] max-w-2xl mx-auto leading-loose">
-                69FK5Q1EpuMyJivm7eNo3aZwwPAN92W8ZxnPshTrpump
+                BNB CONTRACT FOURMEME
               </p>
 
               <p className="text-xs text-muted-foreground/40 font-extralight tracking-[0.18em] max-w-xl mx-auto leading-relaxed">
