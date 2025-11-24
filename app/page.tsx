@@ -12,15 +12,15 @@ export default function HomePage() {
       <WaterRippleBackground />
       <HydrologyContours />
 
-      {/* Partículas fullscreen - automáticamente cubre toda la pantalla */}
+      {/* Partículas fullscreen */}
       <WaterParticles />
 
-      <section className="relative pt-48 pb-40 px-6 min-h-screen flex items-center justify-center">
+      <section className="relative pt-28 pb-40 px-6 min-h-screen flex items-center justify-center">
         <div className="container mx-auto max-w-5xl">
-          <div className="text-center space-y-20">
+          <div className="text-center space-y-16">
             <HeroInkBrush />
 
-            <div className="space-y-20">
+            <div className="space-y-12">
               <h1 className="font-extralight tracking-[0.2em] text-balance">
                 <span className="inline-block">UONA</span>
               </h1>
@@ -34,9 +34,9 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="py-24">
+            <div className="py-16">
               <InkBrushDivider />
-              <div className="py-16 space-y-6">
+              <div className="py-12 space-y-6">
                 <p className="text-base md:text-lg font-extralight tracking-[0.18em] text-foreground/60">
                   Water knows.
                 </p>
@@ -50,7 +50,7 @@ export default function HomePage() {
               <InkBrushDivider />
             </div>
 
-            <div className="space-y-20 py-24">
+            <div className="space-y-16 py-16">
               <div className="space-y-12">
                 <h2 className="text-2xl font-extralight tracking-[0.2em] text-foreground/70">Why UONA Exists</h2>
 
@@ -74,7 +74,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="pt-12">
+                <div className="pt-8">
                   <p className="text-base md:text-lg font-extralight tracking-[0.15em] text-primary/80 leading-loose max-w-3xl mx-auto">
                     UONA turns distributed water sensing into insight, integrity, and action.
                   </p>
@@ -83,7 +83,7 @@ export default function HomePage() {
 
               <InkBrushDivider />
 
-              <div className="space-y-12 pt-12">
+              <div className="space-y-12 pt-8">
                 <h2 className="text-2xl font-extralight tracking-[0.2em] text-foreground/70">How It Works</h2>
 
                 <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
@@ -114,7 +114,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-8 items-center pt-16">
+            <div className="flex flex-col gap-8 items-center pt-12">
               <Link href="/atlas" className="group text-base font-extralight tracking-[0.15em] text-foreground/70 hover:text-primary transition-all duration-500 py-3">
                 Observe the Waters →
               </Link>
