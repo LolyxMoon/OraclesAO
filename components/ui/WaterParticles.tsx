@@ -23,24 +23,24 @@ export default function WaterParticles({ className }: Props) {
       className={className}
       options={{
         fullScreen: { enable: false },
-        fpsLimit: 40,
+        fpsLimit: 60,
         detectRetina: true,
         background: { color: "transparent" },
         
         particles: {
           number: {
-            value: 65,
+            value: 150, // ← MUCHAS MÁS PARTÍCULAS (antes 65)
             density: { 
               enable: true, 
-              area: 1000,
+              area: 800, // ← Más densidad
             },
           },
           
           // Colores VIOLETA
           color: {
             value: isDark 
-              ? ["#9b7dc8", "#a388d5", "#8b6cb8"] // violeta brillante para dark
-              : ["#a388d5", "#9b7dc8", "#b59bdc"], // violeta vibrante en light
+              ? ["#9b7dc8", "#a388d5", "#8b6cb8", "#b59bdc"]
+              : ["#a388d5", "#9b7dc8", "#b59bdc", "#8b6cb8"],
           },
           
           shape: {
@@ -48,17 +48,17 @@ export default function WaterParticles({ className }: Props) {
           },
           
           opacity: {
-            value: isDark ? 0.3 : 0.22,
+            value: isDark ? 0.4 : 0.3, // ← Más visibles
             animation: {
               enable: true,
-              speed: 0.4,
-              minimumValue: isDark ? 0.15 : 0.12,
+              speed: 0.3,
+              minimumValue: isDark ? 0.2 : 0.15,
               sync: false,
             },
           },
           
           size: {
-            value: { min: 1.5, max: 3 },
+            value: { min: 1.5, max: 4 }, // ← Partículas más grandes
             animation: {
               enable: true,
               speed: 0.8,
@@ -69,25 +69,25 @@ export default function WaterParticles({ className }: Props) {
           
           links: {
             enable: true,
-            distance: 130,
-            color: isDark ? "#9b7dc8" : "#a388d5", // violeta
-            opacity: isDark ? 0.18 : 0.14,
-            width: 0.9,
+            distance: 120,
+            color: isDark ? "#9b7dc8" : "#a388d5",
+            opacity: isDark ? 0.25 : 0.2, // ← Links más visibles
+            width: 1,
             triangles: {
               enable: true,
-              opacity: isDark ? 0.025 : 0.018,
+              opacity: isDark ? 0.035 : 0.025,
             },
           },
           
           // Movimiento suave
           move: {
             enable: true,
-            speed: 0.12,
-            direction: "bottom-right",
+            speed: 0.15,
+            direction: "none", // ← Movimiento en todas direcciones
             random: true,
             straight: false,
             outModes: { 
-              default: "out",
+              default: "bounce", // ← Rebotan en los bordes, no desaparecen
             },
             attract: {
               enable: true,
@@ -97,22 +97,22 @@ export default function WaterParticles({ className }: Props) {
           },
         },
         
-        // Interactividad
+        // Interactividad SUAVE - sin desaparición
         interactivity: {
           detectsOn: "canvas",
           events: {
             onHover: {
               enable: true,
-              mode: ["grab", "repulse"],
+              mode: "grab", // ← Solo grab, sin repulse
               parallax: {
                 enable: true,
-                force: 50,
+                force: 30,
                 smooth: 20,
               },
             },
             onClick: {
               enable: true,
-              mode: "bubble",
+              mode: "push", // ← Click agrega partículas
             },
             resize: {
               enable: true,
@@ -120,21 +120,17 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           modes: {
+            // Conexiones al hover - suave
             grab: {
-                links: {
-                  opacity: isDark ? 0.6 : 1.2,
-                },
-            },
-            bubble: {
-                distance: 260,
-                size: 15,
-                opacity: isDark ? 0.6 : 1,
+              distance: 150,
+              links: {
+                opacity: isDark ? 0.5 : 0.4,
+                blink: false,
               },
-            repulse: {
-              distance: 200,
-              duration: 0.1,
-              speed: 0.4,
-              easing: "ease-out-cubic",
+            },
+            // Click agrega partículas
+            push: {
+              quantity: 4,
             },
           },
         },
