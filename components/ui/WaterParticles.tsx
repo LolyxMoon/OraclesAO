@@ -36,11 +36,11 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           
-          // Colores jade-aqua como tu texto
+          // Colores VIOLETA
           color: {
             value: isDark 
-              ? ["#5ca3b8", "#62a89a", "#6fb7c8"] // jade-aqua brillante
-              : ["#6fb7c8", "#62a89a", "#7db5c8"], // jade-aqua vibrante en light
+              ? ["#9b7dc8", "#a388d5", "#8b6cb8"] // violeta brillante para dark
+              : ["#a388d5", "#9b7dc8", "#b59bdc"], // violeta vibrante en light
           },
           
           shape: {
@@ -48,7 +48,7 @@ export default function WaterParticles({ className }: Props) {
           },
           
           opacity: {
-            value: isDark ? 0.3 : 0.22, // ← más brillante
+            value: isDark ? 0.3 : 0.22,
             animation: {
               enable: true,
               speed: 0.4,
@@ -61,7 +61,7 @@ export default function WaterParticles({ className }: Props) {
             value: { min: 1.5, max: 3 },
             animation: {
               enable: true,
-              speed: 0.8, // ← lento
+              speed: 0.8,
               minimumValue: 1,
               sync: false,
             },
@@ -70,8 +70,8 @@ export default function WaterParticles({ className }: Props) {
           links: {
             enable: true,
             distance: 130,
-            color: isDark ? "#5ca3b8" : "#6fb7c8", // jade-aqua
-            opacity: isDark ? 0.18 : 0.14, // ← más visible
+            color: isDark ? "#9b7dc8" : "#a388d5", // violeta
+            opacity: isDark ? 0.18 : 0.14,
             width: 0.9,
             triangles: {
               enable: true,
@@ -79,11 +79,11 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           
-          // ¡RÍO TRANQUILO! - super lento
+          // Movimiento suave
           move: {
             enable: true,
-            speed: 0.12, // ← SÚPER LENTO (antes 0.4)
-            direction: "bottom-right", // flujo suave
+            speed: 0.12,
+            direction: "bottom-right",
             random: true,
             straight: false,
             outModes: { 
@@ -97,13 +97,13 @@ export default function WaterParticles({ className }: Props) {
           },
         },
         
-        // ¡INTERACTIVIDAD RESTAURADA!
+        // Interactividad
         interactivity: {
           detectsOn: "canvas",
           events: {
             onHover: {
               enable: true,
-              mode: ["grab", "repulse"], // ← ambos modos
+              mode: ["grab", "repulse"],
               parallax: {
                 enable: true,
                 force: 50,
@@ -120,23 +120,20 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           modes: {
-            // Conexiones al hover
             grab: {
                 links: {
-                  opacity: isDark ? 0.6 : 1.2, // ← conexiones MUY brillantes
+                  opacity: isDark ? 0.6 : 1.2,
                 },
             },
-            // Partículas crecen al hover
             bubble: {
                 distance: 260,
-                size: 15, // ← más grande
-                opacity: isDark ? 0.6 : 1, // ← más brillante
+                size: 15,
+                opacity: isDark ? 0.6 : 1,
               },
-            // Click hace onda
             repulse: {
               distance: 200,
               duration: 0.1,
-              speed: 0.4, // ← lento y elegante
+              speed: 0.4,
               easing: "ease-out-cubic",
             },
           },
