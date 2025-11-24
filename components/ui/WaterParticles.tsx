@@ -21,26 +21,22 @@ export default function WaterParticles({ className }: Props) {
       id="aona-water-particles"
       init={init}
       className={className}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: -1,
-      }}
       options={{
-        fullScreen: { enable: false },
+        // ← FULLSCREEN HABILITADO - cubre toda la pantalla
+        fullScreen: { 
+          enable: true,
+          zIndex: -1, // Detrás de todo el contenido
+        },
         fpsLimit: 60,
         detectRetina: true,
         background: { color: "transparent" },
         
         particles: {
           number: {
-            value: 180, // Más partículas
+            value: 200, // Muchas partículas
             density: { 
               enable: true, 
-              area: 1000, // Distribución más uniforme
+              area: 900,
             },
           },
           
@@ -56,7 +52,7 @@ export default function WaterParticles({ className }: Props) {
           },
           
           opacity: {
-            value: isDark ? 0.4 : 0.3,
+            value: isDark ? 0.4 : 0.35,
             animation: {
               enable: true,
               speed: 0.3,
@@ -87,7 +83,7 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           
-          // Movimiento en todas direcciones
+          // Movimiento suave en todas direcciones
           move: {
             enable: true,
             speed: 0.2,
@@ -98,14 +94,14 @@ export default function WaterParticles({ className }: Props) {
               default: "bounce",
             },
             attract: {
-              enable: false, // Sin atracción para distribución uniforme
+              enable: false,
             },
           },
         },
         
-        // Interactividad suave
+        // Interactividad
         interactivity: {
-          detectsOn: "window", // Detectar en toda la ventana
+          detectsOn: "window",
           events: {
             onHover: {
               enable: true,
@@ -141,7 +137,7 @@ export default function WaterParticles({ className }: Props) {
         
         smooth: true,
         pauseOnBlur: true,
-        pauseOnOutsideViewport: true,
+        pauseOnOutsideViewport: false, // No pausar cuando está fuera del viewport
       }}
     />
   )
