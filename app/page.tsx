@@ -11,16 +11,15 @@ export default function HomePage() {
     <main className="relative min-h-screen">
       <WaterRippleBackground />
       <HydrologyContours />
-
-      {/* Partículas fullscreen */}
       <WaterParticles />
 
-      <section className="relative pt-28 pb-40 px-6 min-h-screen flex items-center justify-center">
+      {/* Sin flex center - contenido empieza arriba */}
+      <section className="relative pt-24 md:pt-32 pb-40 px-6">
         <div className="container mx-auto max-w-5xl">
-          <div className="text-center space-y-16">
+          <div className="text-center space-y-12">
             <HeroInkBrush />
 
-            <div className="space-y-12">
+            <div className="space-y-8">
               <h1 className="font-extralight tracking-[0.2em] text-balance">
                 <span className="inline-block">UONA</span>
               </h1>
@@ -34,9 +33,9 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="py-16">
+            <div className="py-12">
               <InkBrushDivider />
-              <div className="py-12 space-y-6">
+              <div className="py-10 space-y-5">
                 <p className="text-base md:text-lg font-extralight tracking-[0.18em] text-foreground/60">
                   Water knows.
                 </p>
@@ -50,11 +49,11 @@ export default function HomePage() {
               <InkBrushDivider />
             </div>
 
-            <div className="space-y-16 py-16">
-              <div className="space-y-12">
+            <div className="space-y-14 py-12">
+              <div className="space-y-10">
                 <h2 className="text-2xl font-extralight tracking-[0.2em] text-foreground/70">Why UONA Exists</h2>
 
-                <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-10 max-w-4xl mx-auto">
                   <div className="space-y-4">
                     <p className="text-sm font-extralight tracking-[0.15em] text-foreground/80 leading-loose">
                       Water systems are collapsing quietly.
@@ -74,7 +73,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="pt-8">
+                <div className="pt-6">
                   <p className="text-base md:text-lg font-extralight tracking-[0.15em] text-primary/80 leading-loose max-w-3xl mx-auto">
                     UONA turns distributed water sensing into insight, integrity, and action.
                   </p>
@@ -83,10 +82,10 @@ export default function HomePage() {
 
               <InkBrushDivider />
 
-              <div className="space-y-12 pt-8">
+              <div className="space-y-10 pt-6">
                 <h2 className="text-2xl font-extralight tracking-[0.2em] text-foreground/70">How It Works</h2>
 
-                <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-10 max-w-4xl mx-auto">
                   <div className="space-y-4">
                     <div className="text-3xl font-extralight text-primary/60">01</div>
                     <h3 className="text-sm font-extralight tracking-[0.15em] text-foreground/80">Sensors speak</h3>
@@ -114,7 +113,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-8 items-center pt-12">
+            <div className="flex flex-col gap-6 items-center pt-10">
               <Link href="/atlas" className="group text-base font-extralight tracking-[0.15em] text-foreground/70 hover:text-primary transition-all duration-500 py-3">
                 Observe the Waters →
               </Link>
