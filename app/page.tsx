@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { InkBrushDivider } from "@/components/ink-brush-divider"
-import { WaterRippleBackground } from "@/components/water-ripple-background"
+import WaterRippleBackground from "@/components/water-ripple-background"
 import { HeroInkBrush } from "@/components/hero-ink-brush"
 import { HydrologyContours } from "@/components/hydrology-contours"
 import { WaterCrisisModal } from "@/components/water-crisis-modal"
