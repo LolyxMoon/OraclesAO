@@ -21,6 +21,14 @@ export default function WaterParticles({ className }: Props) {
       id="aona-water-particles"
       init={init}
       className={className}
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: -1,
+      }}
       options={{
         fullScreen: { enable: false },
         fpsLimit: 60,
@@ -29,10 +37,10 @@ export default function WaterParticles({ className }: Props) {
         
         particles: {
           number: {
-            value: 150, // ← MUCHAS MÁS PARTÍCULAS (antes 65)
+            value: 180, // Más partículas
             density: { 
               enable: true, 
-              area: 800, // ← Más densidad
+              area: 1000, // Distribución más uniforme
             },
           },
           
@@ -48,7 +56,7 @@ export default function WaterParticles({ className }: Props) {
           },
           
           opacity: {
-            value: isDark ? 0.4 : 0.3, // ← Más visibles
+            value: isDark ? 0.4 : 0.3,
             animation: {
               enable: true,
               speed: 0.3,
@@ -58,7 +66,7 @@ export default function WaterParticles({ className }: Props) {
           },
           
           size: {
-            value: { min: 1.5, max: 4 }, // ← Partículas más grandes
+            value: { min: 1.5, max: 4 },
             animation: {
               enable: true,
               speed: 0.8,
@@ -69,9 +77,9 @@ export default function WaterParticles({ className }: Props) {
           
           links: {
             enable: true,
-            distance: 120,
+            distance: 130,
             color: isDark ? "#9b7dc8" : "#a388d5",
-            opacity: isDark ? 0.25 : 0.2, // ← Links más visibles
+            opacity: isDark ? 0.25 : 0.2,
             width: 1,
             triangles: {
               enable: true,
@@ -79,31 +87,29 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           
-          // Movimiento suave
+          // Movimiento en todas direcciones
           move: {
             enable: true,
-            speed: 0.15,
-            direction: "none", // ← Movimiento en todas direcciones
+            speed: 0.2,
+            direction: "none",
             random: true,
             straight: false,
             outModes: { 
-              default: "bounce", // ← Rebotan en los bordes, no desaparecen
+              default: "bounce",
             },
             attract: {
-              enable: true,
-              rotateX: 1000,
-              rotateY: 2000,
+              enable: false, // Sin atracción para distribución uniforme
             },
           },
         },
         
-        // Interactividad SUAVE - sin desaparición
+        // Interactividad suave
         interactivity: {
-          detectsOn: "canvas",
+          detectsOn: "window", // Detectar en toda la ventana
           events: {
             onHover: {
               enable: true,
-              mode: "grab", // ← Solo grab, sin repulse
+              mode: "grab",
               parallax: {
                 enable: true,
                 force: 30,
@@ -112,7 +118,7 @@ export default function WaterParticles({ className }: Props) {
             },
             onClick: {
               enable: true,
-              mode: "push", // ← Click agrega partículas
+              mode: "push",
             },
             resize: {
               enable: true,
@@ -120,7 +126,6 @@ export default function WaterParticles({ className }: Props) {
             },
           },
           modes: {
-            // Conexiones al hover - suave
             grab: {
               distance: 150,
               links: {
@@ -128,7 +133,6 @@ export default function WaterParticles({ className }: Props) {
                 blink: false,
               },
             },
-            // Click agrega partículas
             push: {
               quantity: 4,
             },

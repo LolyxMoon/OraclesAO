@@ -12,8 +12,8 @@ export default function HomePage() {
       <WaterRippleBackground />
       <HydrologyContours />
 
-      {/* ✅ capa sutil de partículas */}
-      <WaterParticles className="pointer-events-none absolute inset-0 -z-10" />
+      {/* Partículas cubriendo TODA la pantalla */}
+      <WaterParticles className="!fixed !inset-0 !w-full !h-full pointer-events-none" />
 
       <section className="relative pt-48 pb-40 px-6 min-h-screen flex items-center justify-center">
         <div className="container mx-auto max-w-5xl">
